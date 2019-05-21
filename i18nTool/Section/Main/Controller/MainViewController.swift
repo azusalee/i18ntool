@@ -40,25 +40,29 @@ class MainViewController: NSViewController {
     
     @IBAction func keyParseDidTap(_ sender: Any) {
         //strings
-        let stringsPath:String = self.keyFilePathTextField.stringValue
-        let url = URL.init(fileURLWithPath: stringsPath)
+        let filePath:String = self.keyFilePathTextField.stringValue
+        let url = URL.init(fileURLWithPath: filePath)
         let ext = url.pathExtension
         
         if ext == "strings" {
-            self.parseStringsFile(stringsPath: stringsPath)
+            self.parseStringsFile(stringsPath: filePath)
+        }else if ext == "xml" {
+            self.parseXMLFile(xmlPath: filePath)
         }else{
             self.appendHintString(string: "解析key文件失败，未能识别文件格式"+ext)
         }
     }
     
     @IBAction func outputDidTap(_ sender: Any) {
-        let stringsPath:String = self.keyFilePathTextField.stringValue
-        let url = URL.init(fileURLWithPath: stringsPath)
+        let filePath:String = self.keyFilePathTextField.stringValue
+        let url = URL.init(fileURLWithPath: filePath)
         let ext = url.pathExtension
         
         UserDefaults.standard.set(self.outputPathTextField.stringValue, forKey: "LastOuputPath")
         if ext == "strings" {
             self.outputStringsFile()
+        }else if ext == "xml" {
+            self.outputXmlFile()
         }else{
             self.appendHintString(string: "解析key文件失败，未能识别文件格式"+ext)
         }
@@ -129,6 +133,29 @@ class MainViewController: NSViewController {
 //        
 //        self.appendHintString(string: "解析key文件完成")
 //    }
+
+    func parseXMLFile(xmlPath:String) {
+        self.keyList.removeAll()
+        
+        if let xmlContent:String = try? String.init(contentsOfFile: xmlPath, encoding: String.Encoding.utf8) {
+            let xml = SWXMLHash.parse(xmlContent)
+            for elem in xml["resources"]["string"].all {
+                if let name = elem.element?.attribute(by: "name")?.text {
+                    
+                    if let firstIndex = name.firstIndex(of: "_") {
+                        
+                        let keyName = String(name[name.index(firstIndex, offsetBy: 1)..<name.endIndex])
+                        self.keyList.append(keyName)
+                    }else{
+                        self.keyList.append(name)
+                    }
+                }
+            }
+        }
+        
+        self.appendHintString(string: "解析key文件完成")
+        
+    }
     
     func parseStringsFile(stringsPath:String) {
     
@@ -171,8 +198,7 @@ class MainViewController: NSViewController {
         self.appendHintString(string: "解析key文件完成")
     }
     
-    
-    func outputStringsFile() {
+    func checkPrepare() -> Bool {
         if self.curCSV == nil {
             self.csvParseDidTap("")
 //            self.appendHintString(string: "csv文件未解析")
@@ -185,12 +211,21 @@ class MainViewController: NSViewController {
         }
         if self.curCSV == nil {
             self.appendHintString(string: "csv文件未解析")
-            return
+            return false
         }
         if self.keyList.count == 0 {
             self.appendHintString(string: "key文件未解析")
+            return false
+        }
+        return true
+    }
+    
+    func outputStringsFile() {
+        
+        if self.checkPrepare() == false {
             return
         }
+        
         let outputPath = self.outputPathTextField.stringValue
         if outputPath.count == 0 {
             self.appendHintString(string: "请填入输出文件夹路径")
@@ -243,6 +278,70 @@ class MainViewController: NSViewController {
             try! fileContens.write(toFile: fileUrlPath, atomically: true, encoding: String.Encoding.utf8)
             self.appendHintString(string: "输出文件:\(fileUrlPath)")
         }
+        self.appendHintString(string: "输出完成")
+    }
+    
+    func outputXmlFile() {
+        if self.checkPrepare() == false {
+            return
+        }
+        
+        let outputPath = self.outputPathTextField.stringValue
+        if outputPath.count == 0 {
+            self.appendHintString(string: "请填入输出文件夹路径")
+            return
+        }
+        
+        let csv:CSV = self.curCSV!
+        let nameRows = csv.namedRows
+        let headers = csv.header
+        var outputDict:[String:[String:String]] = [:]
+        for header in headers {
+            if header != "key" {
+                outputDict[header] = [:]
+            }
+        }
+        
+        for key in self.keyList {
+            for rowDict in nameRows {
+                if key == rowDict["key"] {
+                    for header in headers {
+                        if header != "key" {
+                            outputDict[header]![key] = rowDict[header]
+                        }
+                    }
+                    break;
+                }
+            }
+        }
+        
+        let manager = FileManager.default
+        if manager.fileExists(atPath: outputPath) == false {
+            try! manager.createDirectory(atPath: outputPath, withIntermediateDirectories: true, attributes: nil)
+        }
+        
+        let xmlFolderPath = outputPath+"/xml"
+        if manager.fileExists(atPath: xmlFolderPath) == false {
+            try! manager.createDirectory(atPath: xmlFolderPath, withIntermediateDirectories: true, attributes: nil)
+        }
+        
+        for (header, dict) in outputDict {
+            let headerFolderPath = xmlFolderPath+"/\(header)"
+            if manager.fileExists(atPath: headerFolderPath) == false {
+                try! manager.createDirectory(atPath: headerFolderPath, withIntermediateDirectories: true, attributes: nil)
+            }
+            var fileContens:String = ""
+            fileContens.append(contentsOf: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n")
+            fileContens.append(contentsOf: "<resources>\n")
+            for (key, value) in dict {
+                fileContens.append(contentsOf: "  <string name=\"\(key)\">\(value)</string>\n")
+            }
+            fileContens.append(contentsOf: "</resources>\n")
+            let fileUrlPath = headerFolderPath+"/strings.xml"
+            try! fileContens.write(toFile: fileUrlPath, atomically: true, encoding: String.Encoding.utf8)
+            self.appendHintString(string: "输出文件:\(fileUrlPath)")
+        }
+        
         self.appendHintString(string: "输出完成")
     }
     

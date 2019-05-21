@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C3704762293ED7D005E3352 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3704732293ED7D005E3352 /* SWXMLHash.swift */; };
+		8C3704782293ED7D005E3352 /* XMLIndexer+XMLIndexerDeserializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3704752293ED7D005E3352 /* XMLIndexer+XMLIndexerDeserializable.swift */; };
 		8C8C1331229289FA00A04FF9 /* EnumeratedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C132A229289FA00A04FF9 /* EnumeratedView.swift */; };
 		8C8C1332229289FA00A04FF9 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C132B229289FA00A04FF9 /* Description.swift */; };
 		8C8C1333229289FA00A04FF9 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C132C229289FA00A04FF9 /* CSV.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C3704732293ED7D005E3352 /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
+		8C3704752293ED7D005E3352 /* XMLIndexer+XMLIndexerDeserializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XMLIndexer+XMLIndexerDeserializable.swift"; sourceTree = "<group>"; };
 		8C8C132A229289FA00A04FF9 /* EnumeratedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumeratedView.swift; sourceTree = "<group>"; };
 		8C8C132B229289FA00A04FF9 /* Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		8C8C132C229289FA00A04FF9 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
@@ -50,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C3704722293ED67005E3352 /* SWXMLHash */ = {
+			isa = PBXGroup;
+			children = (
+				8C3704732293ED7D005E3352 /* SWXMLHash.swift */,
+				8C3704752293ED7D005E3352 /* XMLIndexer+XMLIndexerDeserializable.swift */,
+			);
+			path = SWXMLHash;
+			sourceTree = "<group>";
+		};
 		8C8C1329229289FA00A04FF9 /* SwiftCSV */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +142,7 @@
 		8CAC568F22925D0C00DB0D1B /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8C3704722293ED67005E3352 /* SWXMLHash */,
 				8C8C133F2292958D00A04FF9 /* StringsParse */,
 				8C8C1329229289FA00A04FF9 /* SwiftCSV */,
 			);
@@ -214,9 +228,11 @@
 				8C8C1335229289FA00A04FF9 /* NamedView.swift in Sources */,
 				8C8C1333229289FA00A04FF9 /* CSV.swift in Sources */,
 				8C8C1332229289FA00A04FF9 /* Description.swift in Sources */,
+				8C3704762293ED7D005E3352 /* SWXMLHash.swift in Sources */,
 				8C8C1331229289FA00A04FF9 /* EnumeratedView.swift in Sources */,
 				8C8C1337229289FA00A04FF9 /* Parser.swift in Sources */,
 				8C8C1336229289FA00A04FF9 /* ParsingState.swift in Sources */,
+				8C3704782293ED7D005E3352 /* XMLIndexer+XMLIndexerDeserializable.swift in Sources */,
 				8C8C133D22928AA400A04FF9 /* MainViewController.swift in Sources */,
 				8CAC56822292559500DB0D1B /* AppDelegate.swift in Sources */,
 				8C8C1334229289FA00A04FF9 /* String+Lines.swift in Sources */,
