@@ -2,15 +2,25 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File (Integrated Terminal)",
+            "name": "Python: xml File (Integrated Terminal)",
             "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
             "args": [
                 "/Users/yangming/Desktop/quotes.csv",
-                //"/Users/yangming/Desktop/Localizable.strings"
                 "/Users/yangming/Desktop/strings.xml"
+            ]
+        },
+        {
+            "name": "Python: strings File (Integrated Terminal)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "/Users/yangming/Desktop/quotes.csv",
+                "/Users/yangming/Desktop/Localizable.strings"
             ]
         }
     ]

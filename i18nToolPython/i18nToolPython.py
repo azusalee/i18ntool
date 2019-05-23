@@ -42,7 +42,6 @@ def ParseXmlFile(_xmlfile):
             if "_" in name:
                 key = name.split("_", 1)[1]
                 keyarr.append(key)
-                print(key)
 
     print("处理.xml完毕")
     return keyarr
@@ -134,7 +133,6 @@ def ParseFile(_csvfile, _keyfile):
 
 
 def main(args):
-    #global lastseq
 
     if 2==len(args):
         ParseFile(args[0], args[1])
