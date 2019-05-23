@@ -27,6 +27,8 @@ def ParseStringsFile(_stringsfile):
         keyarr.append(keyname[1:len(keyname)-1])
 
     print("处理.strings文件完毕")
+    if len(keyarr) == 0:
+        print("没解析出任何key值，请确保.strings的文件内容的格式正确")
     return keyarr
 
 def ParseXmlFile(_xmlfile):
@@ -42,16 +44,21 @@ def ParseXmlFile(_xmlfile):
             if "_" in name:
                 key = name.split("_", 1)[1]
                 keyarr.append(key)
+            else:
+                keyarr.append(name)
 
     print("处理.xml完毕")
+    if len(keyarr) == 0:
+        print("没解析出任何key值，请确保.xml的文件内容的格式正确")
     return keyarr
 
 def ParseCsvFile(_csvfile):
     if ".csv" not in _csvfile:
         print("未能处理:"+_csvfile)
+        print("请确认文件后缀为.csv")
         return []
 
-    print("开始处理csv")
+    print("开始处理.csv")
     csvobj = csv.reader(open(_csvfile, 'r'))
     csvheader = []
     for obj in csvobj :
@@ -71,8 +78,7 @@ def ParseCsvFile(_csvfile):
           for headname, headDict in outputDict.items():
               headDict[obj["key"]] = obj[headname]
 
-    print(outputDict)
-    print("csv处理完毕")
+    print(".csv处理完毕")
     return outputDict
 
 def outputFile(_outputDict, _keyarr, _outputType, _outputLan):
@@ -133,10 +139,12 @@ def ParseFile(_csvfile, _keyfile):
         outputType = 2
     else:
         print("未能解析文件:"+_keyfile)
+        print("请确认第二个入参的文件为.strings或.xml后缀")
         exit(1)
 
+    
     outputFile(outputDict, keyarr, outputType, "All")
-
+    
     print("执行完毕")
 
 
@@ -145,7 +153,7 @@ def main(args):
     if 2==len(args):
         ParseFile(args[0], args[1])
     else: 
-        print("缺少文件路径")
+        print("缺少参数, 需要输入两个参数, 第一个参数输入.csv文件的路径，第二个参数输入.strings或.xml文件")
 
 if __name__ == "__main__":
     main(sys.argv[1:])
