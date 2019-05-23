@@ -5,8 +5,53 @@ import os
 import glob
 import csv
 import re
+import xml.etree.ElementTree as ET
+import xml.dom.minidom
+
+def ParseStringsFile(_stringsfile):
+    print("开始处理.strings文件")
+    fp = open(_stringsfile, "r")
+    filecontent = fp.read()
+    fp.close()
+    p1 = r"\"[^\"]*\" *= *\"[^\"]*\";"
+    pattern1 = re.compile(p1)
+    matcher1 = re.findall(pattern1, filecontent)
+
+    p2 = r"\"[^\"]*\""
+    pattern2 = re.compile(p2)
+
+    keyarr = []
+    for match in matcher1:
+        matcher2 = re.findall(pattern2, match)
+        keyname = matcher2[0]
+        keyarr.append(keyname[1:len(keyname)-1])
+
+    print("处理.strings文件完毕")
+    return keyarr
+
+def ParseXmlFile(_xmlfile):
+    print("开始处理.xml")
+    tree = xml.dom.minidom.parse(_xmlfile)
+    collection = tree.documentElement
+    
+    keyarr = []
+    tags = collection.getElementsByTagName("string")
+    for tag in tags:
+        if tag.hasAttribute("name"):
+            name = tag.getAttribute("name")
+            if "_" in name:
+                key = name.split("_", 1)[1]
+                keyarr.append(key)
+                print(key)
+
+    print("处理.xml完毕")
+    return keyarr
 
 def ParseFile(_csvfile, _keyfile):
+    if ".csv" not in _csvfile:
+        print("未能处理:"+_csvfile)
+        exit(1)
+
     print("开始处理csv")
     csvobj = csv.reader(open(_csvfile, 'r'))
     csvheader = []
@@ -31,47 +76,61 @@ def ParseFile(_csvfile, _keyfile):
     print(outputDict)
     print("csv处理完毕")
 
-    print("开始处理.strings文件")
-    fp = open(_keyfile, "r")
-    filecontent = fp.read()
-    fp.close()
-    p1 = r"\"[^\"]*\" *= *\"[^\"]*\";"
-    pattern1 = re.compile(p1)
-    matcher1 = re.findall(pattern1, filecontent)
-
-    p2 = r"\"[^\"]*\""
-    pattern2 = re.compile(p2)
-
     keyarr = []
-    for match in matcher1:
-        matcher2 = re.findall(pattern2, match)
-        keyname = matcher2[0]
-        keyarr.append(keyname[1:len(keyname)-1])
+    outputType = 0
+    if ".strings" in _keyfile:
+        keyarr = ParseStringsFile(_keyfile)
+        outputType = 1
+    elif ".xml" in _keyfile:
+        keyarr = ParseXmlFile(_keyfile)
+        outputType = 2
+    else:
+        print("未能解析文件:"+_keyfile)
+        exit(1)
 
-    print("处理.strings文件完毕")
+    if outputType == 1:
+        for headname, headDict in outputDict.items():
+            outputContent = ""
+            for keyname in keyarr:
+                if keyname in headDict:
+                    outputContent += "\""+keyname+"\""+" = "+"\""+headDict[keyname]+"\";\n"
 
-    for headname, headDict in outputDict.items():
-        outputContent = ""
-        for keyname in keyarr:
-            if keyname in headDict:
-                outputContent += "\""+keyname+"\""+" = "+"\""+headDict[keyname]+"\";\n"
+            print(outputContent)
+            print(os.getcwd())
+            outputDirPath = os.getcwd()+"/strings/"+headname
+            isexists = os.path.exists(outputDirPath)
+            if not isexists:
+                os.makedirs(outputDirPath)
 
-        print(outputContent)
-        print(os.getcwd())
-        outputDirPath = os.getcwd()+"/strings/"+headname
-        isexists = os.path.exists(outputDirPath)
-        if not isexists:
-            os.makedirs(outputDirPath)
+            outputFilePath = outputDirPath+"/Localizable.strings"
+            fpout = open(outputFilePath, "w")
+            fpout.write(outputContent)
+            fpout.close()
+            print("写入文件"+outputFilePath)
+    elif outputType == 2:
+        for headname, headDict in outputDict.items():
+            outputContent = ""
+            outputContent += "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
+            outputContent += "<resources>\n"
+            for keyname in keyarr:
+                if keyname in headDict:
+                    outputContent += "  <string name=\""+keyname+"\">"+headDict[keyname]+"</string>\n"
 
-        outputFilePath = outputDirPath+"/Localizable.strings"
-        fpout = open(outputFilePath, "w")
-        fpout.write(outputContent)
-        fpout.close()
-        print("写入文件"+outputFilePath)
+            outputContent += "</resources>\n"
+            print(outputContent)
+            print(os.getcwd())
+            outputDirPath = os.getcwd()+"/xml/"+headname
+            isexists = os.path.exists(outputDirPath)
+            if not isexists:
+                os.makedirs(outputDirPath)
+
+            outputFilePath = outputDirPath+"/strings.xml"
+            fpout = open(outputFilePath, "w")
+            fpout.write(outputContent)
+            fpout.close()
+            print("写入文件"+outputFilePath)
 
     print("执行完毕")
-
-
 
 
 def main(args):

@@ -9,7 +9,8 @@
             "console": "integratedTerminal",
             "args": [
                 "/Users/yangming/Desktop/quotes.csv",
-                "/Users/yangming/Desktop/Localizable.strings"
+                //"/Users/yangming/Desktop/Localizable.strings"
+                "/Users/yangming/Desktop/strings.xml"
             ]
         }
     ]
