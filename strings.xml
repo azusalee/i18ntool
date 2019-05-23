@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="user_cancel">输入手机号码</string>
+  <string name="user_ok">输入验证码</string>
+  <string name="user_submit">获取验证码</string>
+  <string name="user_login">登录</string>
+  <string name="user_logout">退出登录</string>
+  <string name="user_register">注册申请</string>
+  <string name="user_register_link"><u>注册申请</u></string>
+  <string name="user_on_login">登录中...</string>
+  <string name="user_input_new_password_hint">输入新密码6–20位,区分大小写</string>
+  <string name="user_input_password_hint">输入密码</string>
+  <string name="user_confirm_password_hint">确认密码</string>
+  <string name="user_forgot_password">忘记密码</string>
+  <string name="user_password_not_equals">两次输入的密码不一致</string>
+  <string name="user_next_step">下一步</string>
+  <string name="user_registration_is_agreed">注册即视为同意</string>
+  <string name="user_platform_protocol">顺PHONE车条款及细则</string>
+  <string name="user_verify_code_has_send">已发送</string>
+  <string name="user_please_confirm_password">确认密码是否相同</string>
+  <string name="user_reset_password_success">重置密码成功</string>
+  <string name="user_application_agreement">申请协议</string>
+  <string name="user_get_off_work">请先下班</string>
+  <string name="user_download_address_wrong">apk 下载地址错误</string>
+
+  <string name="user_approval_state">审核进度</string>
+  <string name="user_waiting_check">已收到你的资料</string>
+  <string name="user_waiting_judge">等待审核</string>
+  <string name="user_person_approval">专人审批中</string>
+  <string name="user_training_online">在线培训</string>
+  <string name="user_approval_does_not_pass">审核未通过</string>
+  <string name="user_approval_does_not_pass_reason">原因:资料不符合要求,请重新提交资料</string>
+  <string name="user_approval_Check_progress">检查最新审核进度</string>
+  <string name="user_first_step">第1步</string>
+  <string name="user_second_step">第2步</string>
+  <string name="user_third_step">第3步</string>
+  <string name="user_fourth_step">第4步</string>
+  <string name="user_finish_register">完成注册</string>
+  <string name="user_approval_process">专人审批中, 请耐心等待</string>
+  <string name="user_ex_msg_fail_btn">重新提交资料</string>
+
+
+  <string name="user_data_transfer">资料转移</string>
+  <string name="user_data_transfer_tips">如阁下同意将「顺PHONE车」之注册资料直接转移至「配送专员」流动应用程式，有关帐号及资料将会被自动更新。请选择按&lt;同意转移&gt;。\n\n如选择&lt;不同意&gt; 转移资料，将来则需要于「配送专员」重新提交个人资料注册。</string>
+  <string name="user_car_verification_tips">请提供注册「顺PHONE车」时填写的车牌号码以作身份覆实。</string>
+  <string name="user_car_verification">车牌验证</string>
+  <string name="user_tnc_url"><u>配送专员使用应用程式声明条款</u></string>
+  <string name="user_transfer">同意转移</string>
+  <string name="user_msg_non_conformity">车牌不符</string>
+  <string name="user_msg_non_conformity_content">车牌号码与记录不符。可尝试较早前的车牌号码，或致电客服查询 2121-2211</string>
+  <string name="user_start_use">开始使用 ></string>
+  <string name="user_empty_data">暂无记录</string>
+  <string name="user_disagreement">不同意</string>
+  <string name="user_agreement">同意</string>
+  <string name="user_erro_network">网络异常，请检查后重试！</string>
+  <string name="user_apply_schedule_frequently">网络繁忙，请稍后重试。</string>
+
+  <string name="user_approve_submit">提交资料</string>
+  <string name="user_online_city">上线城市*</string>
+  <string name="user_id_card_english_name">请输入英文全名(与身份证相同)*</string>
+  <string name="user_id_card_chinese_name">请输入中文全名(与身份证相同)*</string>
+  <string name="user_gender_title">性別*</string>
+  <string name="user_birth_date_title">出生日期*</string>
+  <string name="user_job_type">工种*</string>
+  <string name="user_introducer_phone">介绍人手机号码</string>
+  <string name="user_upload_avatar">上传头像</string>
+  <string name="user_make_sure_avatar_quality">请确保上传的照片完整清晰</string>
+  <string name="user_avatar_example">例子</string>
+  <string name="user_webpage_registration_point_here">网页注册按这里 >></string>
+  <string name="user_birth_must_less_current_date">出生日期不得大于当前日期</string>
+  <string name="user_select">请选择</string>
+  <string name="user_complete_the_information_after_submission">请填写资料后提交</string>
+
+  <string name="user_job_car_num">车牌号码</string>
+  <string name="user_service_grade">服务评级</string>
+  <string name="user_rating">用户评分</string>
+  <string name="user_account_bank_card">银行户口</string>
+  <string name="user_order_notify">订单通知</string>
+  <string name="user_online_prepare">上线准备</string>
+  <string name="user_account_balance">账户余额</string>
+  <string name="user_account_service_charges">服务费过数记录</string>
+  <string name="user_account_complete">本周业绩</string>
+  <string name="user_express_reconciliations">速运对账</string>
+  <string name="user_account_oil_user_record">油卡使用记录</string>
+  <string name="user_my_account">我的帐户</string>
+  <string name="user_account_service">服务费</string>
+  <string name="user_account_advance">垫付费</string>
+  <string name="user_account_subsidy">津贴</string>
+  <string name="user_account_red_envelopes">服务费回馈</string>
+  <string name="user_account_bonus">奖金</string>
+  <string name="user_account_withdraw">转账中</string>
+
+  <string name="user_account_file">我的資料</string>
+  <string name="user_account_img_head">头像像片</string>
+  <string name="user_account_driver_num">司机编号</string>
+  <string name="user_account_register">注册手机号</string>
+  <string name="user_account_chinese_name">中文名字</string>
+  <string name="user_account_english_name">英文名字</string>
+  <string name="user_account_sex">性別</string>
+  <string name="user_account_mail">邮箱地址</string>
+  <string name="user_account_year">工作年限</string>
+  <string name="user_account_job_term">更改资料需要通过审核才会生效</string>
+  <string name="user_account_not_edit">未填写</string>
+  <string name="user_account_man">男</string>
+  <string name="user_account_women">女</string>
+
+  <string name="user_wait_repaired">待修读</string>
+  <string name="user_finished">已完成</string>
+  <string name="user_no_data_remind">暂无相关数据</string>
+  <!--我的帳戶-->
+  <string name="user_service">服务费</string>
+  <string name="user_advance">垫付费</string>
+  <string name="user_bonus">奖金</string>
+  <string name="user_subsidy">津贴</string>
+  <string name="user_red_envelopes">服务费回馈</string>
+  <string name="user_withdraw">提现</string>
+  <string name="user_total">全部</string>
+  <string name="user_detail_list">详细内容</string>
+
+  <string name="user_bank_account">银行户口</string>
+  <string name="user_select_bank_code">选择银行代码</string>
+  <string name="user_select_bank">选择银行</string>
+  <string name="user_select_bank_num">请选择银行代码</string>
+  <string name="user_bank_name">持卡人姓名</string>
+  <string name="user_bank_name_tips">请填写银行户口之英文全名</string>
+  <string name="user_bank_number_tips">仅限港币储蓄户口</string>
+  <string name="user_bank_number_tips_myself">(仅限登记本人)</string>
+  <string name="user_bank_name_number">银行户口号码</string>
+  <string name="user_upload_bank_img">上传银行卡正面照片</string>
+  <string name="user_makesure_photo_light">请确保上传照片完整清晰</string>
+  <string name="user_add_bank">新增银行户口</string>
+  <string name="user_confirm_delete_bank">確定要刪除尾數%1$s的銀行戶口嗎？</string>
+
+
+
+  <string name="user_image_uploading">相片上传中</string>
+  <string name="user_register_time">登记日期&#160;:</string>
+  <string name="user_approval_time">审批日期&#160;:</string>
+  <string name="user_resubmit">重新提交&#160;></string>
+
+</resources>

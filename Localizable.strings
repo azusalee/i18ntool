@@ -1,0 +1,761 @@
+/*
+Localizable.stringstaskerCreated by 
+vitotse88 on 2017/5/25.Copyright
+ © 2017年 BT. All rights reserved.
+ */
+
+/*date formatter*/
+"date_formatter_YMD" = "yyyy-M-d";
+"date_formatter_YMD_default" = "yyyy-M-d";
+
+"date_formatter_week_default" = "EEEE";
+"date_formatter_week_short" = "E";
+
+"date_formatter_date_short" = "M-d";
+"date_formatter_time_short" = "aah:mm";
+
+"date_formatter_datetime_default" = "yyyy-M-d aah:mm";
+"date_formatter_datetime_short" = "M-d aah:mm";
+
+"date_formatter_datetime_short_with_week" = "M-d E aah:mm";
+
+
+"title:Home" = "Home";
+"title:MyAccount" = "My account";
+"title:Setting" = "Settings";
+"title:Language" = "Language";
+"title:MyInfo" = "My info";
+"title:MyPosition" = "My position";
+"title:MyPositionDocument" = "Position information";
+"title:MyPositionWorkState" = "Job equipment"; //
+"title:Scanner" = "Scanner";
+"title:ProcessAudit" = "Application progress";
+
+"title:Balance" = "Account balance";
+"title:Login" = "Login";
+"title:Message" = "Notice";  //最新消息 Cliff: 公告？
+"title:MissionCenter" = "Incentive";
+"title:MissionDetail" = "Incentive details";
+"title:OrderDetail" = "Order details";
+"title:SignInInfo" = "Submit";
+"title:SignIn" = "Registration";
+"title:Suggestion"  = "Contact";
+"title:UpdateLocation" = "My location";
+
+"title:MyTimeTable" = "My roster";
+"title:TimeTableRegion" = "Select area";
+"title:EarlyOrLater" = "Leave Application"; // "遲到早退申請
+"title:Leave" = "Apply for leave";
+"title:SelectTimeTable" = "Apply for roster";
+"title:ResetPassword" = "Reset password";
+
+"title:accountBalanceDetail" = "details";
+"title:distributeOrderMap" = "Order dispatch location";
+"title:AddPosition" = "Add position";
+
+"button:currentPosition" = "Active Position"; // 已設為當前上線工種
+"button:availablePosition" = "Set as default"; //設為上線工種
+"button:checkingPosition" = "Information review in progress...";
+"button:MyPositionWorkState" = "Confirm";
+"button:forgetPassword" = "Forgot password";
+"button:logout" = "Logout";
+"button:timetable" = "Apply roster";
+"button:next" = "Next";
+"button:AddPosition" = "Add position";
+"button:rejectPosition" = "Rejected";
+
+
+"label:positionWorkInfo" = "Position";
+"label:addPositionInfo" = "Add position info";//没用到，只有一处屏蔽了代码用到
+
+"placeholder:phone" = "Please input mobile number";
+"placeholder:password" = "Please input password";
+"placeholder:password_new" = "Please input new password (6-20 digit, case sensitive)";
+"placeholder:password_confirm" = "Confirm password";
+"placeholder:verify_code" = "Please input SMS verification code";
+"placeholder:carno" = "Vehicle number";
+
+
+"dateTitle" = "Select date";
+
+
+"system_language" = "System default";
+
+"move_code_inside_scanner_for_scanning" = "Move the code inside the box";//没用到，只有一处屏蔽了代码用到
+
+"suggest_placedholder" = "Please describe your enquiry or suggestion. We will follow up as soon as possible.";
+
+"cancel" = "Cancel";
+"ok" = "Confirm";
+"submit" = "Submit";
+"loading..." = "Loading...";
+"modify" = "Update";
+"agree" = "Agree";
+"success" = "Success";
+
+"country_or_region" = "Country / Region"; // City area
+
+"take_photo" = "Take photo";
+"choice_from_photo_album" = "Select from album";
+
+"declare_btn_title" = "Exception"; //  申報
+"declare_title" = "Exception";  //異常申報
+
+"only_group_precess" = "Home"; //到家
+"only_order_precess" = "Food"; // 外賣 Food Delivery
+"only_order_precess_v2" = "Food 2.0";  // 外賣 Food Delivery 2.0
+
+"send_order_title" = "My Food delivery order";
+"group_order_title" = "My Home Delivery order";
+"old_order_title" = "Bid order"; // 搶單
+"old_normal_order" = "Food delivery";//没用到，只有一处屏蔽了代码用到
+"old_group_order" = "Home express";//没用到，只有一处屏蔽了代码用到
+"old_urgent_document_order" = "Express parcel";//没用到，只有一处屏蔽了代码用到
+"group_order_info" = "Combine order details";//没用到
+
+"precessing" = "On-going"; //進行中
+"appointment" = "Scheduled";
+"finished" = "Completed";
+"cancelled" = "Cancelled";
+"error_handle" = "Exception"; //異常處理
+
+"scroll-precessing" = "In-progress";
+
+"account_blance" = "Account balance";
+"week_performance" = "Weekly performance";
+
+"not_upload" = "No input yet";//没用到
+"uploaded" = "Review passed";//没用到
+"upload_image_success" = "Image upload succeeded";
+"upload_image_failed" = "Image upload failed, please retry";
+"upload" = "Upload";
+
+
+
+
+"after" = "after";
+
+"withdraw_deposit" = "Withdraw";
+"bankcard" = "Bank account";
+"modify_info_notice" = "Modified information will be effective after review";
+
+"avatar" = "Avatar";
+"tasker_id" = "Tasker ID";
+"register_phone" = "Register phone number"; //註冊手機號
+"name_cn" = "Full name as per NRIC";
+"name_en" = "Preferred name";
+"gender" = "Gender";
+"email" = "Email address";
+"seniority" = "Working years";
+"content_server" = "Connecting to server...";
+"off_duty" = "Offline";
+"on_duty" = "Online";
+"open" = "Open";
+
+"deliver_version" = "Partner version";
+
+"mission_reward" = "Reward";
+"no_mission" = "Incentive scheme to be released\nPlease pay attention";
+"mission_time" = "Mission time";//没用到，只有一处屏蔽了代码用到
+"mission_name" = "Mission name";//没用到，只有一处屏蔽了代码用到
+"mission_content" = "Content";
+"mission_remark" = "Remarks";
+"mission_reward_main" = "Mission reward";
+
+"take_time" = "Pickup:%@mins";
+"deliver_time" = "Delivery:%@mins";
+"total_time" = "Total:%@mins";
+
+"today_complete" = "Today completed";
+"week_complete" = "This week completed";
+"month_complete" = "This month completed";
+"order_name" = "Order";
+"order_id" = "Order number";
+"take_out" = "Type";
+"urgent_document" = "Express parcel";//没用到
+"take_address" = "Pickup address";
+"shop_name" = "Pickup location";
+"phone" = "phone number";
+"custom_address" = "Customer  address";
+"custom_name" = "Customer name";
+
+"custom_phone" ="Customer phone number";
+"shop_phone" = "Pickupphone number";
+
+"no_order_with_old_order" = "All order are grabbed"; // grabbed??
+"no_order_with_list" = "No order";
+
+"item_image" = "Product photo";
+"take_out_view_order" = "Food delivery";//没用到
+"urgent_document_view_order" = "Express parcel";//没用到
+
+"take_time_remaining" = "Pickup remaining time";
+"deliver_time_remaining" = "Delivery remaining time";
+"client_order_id" = "Recipit number";
+"verify_code" = "verification code";
+"take_photo_with_order" = "Take recipit photo";
+"finish_take" = "Pickup completed";
+"custom_sign_for_goods" = "Submit";
+"nil_take_code" = "Pickup code is empty";
+"please_choose_photo" = "Please select photo";//没用到，只有一处屏蔽了代码用到
+"step" = "Step %@";//没用到
+
+"start_trainning" = "Start online training";
+"check_precess" = "Refresh";
+"back_to_login" = "Back to login";//没用到，只有一处屏蔽了代码用到
+"login_now" = "Get Started";
+"resubmit_info" = "Submit again";
+"got_info" = "Your particular is submitted";
+"wait_for_audit" = "Submitted for review";
+"checking" = "Reviewing in progress";
+"online_trainning" = "Accessment";
+"register_finished" = "Registration approved";
+"reject_audit" = "Review rejected";
+"reason" = "Reason:";
+"remark" = "Remarks";
+"remark_takeout_order" = "Important notes";
+
+"sound_notice" = "Sound notification";
+"vibrate_notice" = "Vibration notification";
+"map_swicth" = "Show task map";
+"reset password" = "Reset password";
+"show_scan_info" = "Show scan result"; //顯示掃描資訊
+"contact_CS" = "Customer service hotline";
+"facebook_title" = "Facebook fans page";//没用到，只有一处屏蔽了代码用到
+"feedback" = "Contact us";
+"new_version" = "New version";//没用到
+"check_version" = "Check for updates";
+"current_version" = "Version"; //當前版本
+
+"on_duty_region" = "Online area";
+"position" = "Position";
+"on_duty_city" = "Online city";
+"input_en_name" = "Please input preferred name";
+"input_cn_name" = "Please input full name as per NRIC";
+"birth" = "Birthday";
+"upload_avatar" = "Upload avatar";
+"clear_display" = "Please make sure the photo is clear";
+"recommend_phone" = "Referral phone number";
+"choose_country_code" = "Select country code";
+"input_phone" = "Please input mobile number";
+"input_verify_code" = "Please input verification code";
+"next_step" = "Next";
+"get_premission" = "Grant location permission";
+"get_premission_sub" = "In order to go online, you need to grant location permission to App";
+"get_verify_code" = "Get verification code";
+
+"order_receiving" = "Accept order";
+"order_take_out_receiving" = "Accept Food delivery order";
+"order_rob_out_receiving" = "Grab Food delivery order";
+"order_urgent_document_receiving" = "Grab Express parcel order";
+
+"reject_order" = "Reject";
+"reject_order_mode0" = "Reject";
+"reject_order_mode1" = "Ignore";
+"make_an_appointment_publish" = "Scheduled publish";//没用到
+"make_an_appointment_receipt" = "Scheduled Pickup";//没用到
+"make_an_appointment" = "Scheduled";
+"now" = "Now";
+"Mcdonald's" = "Mcdonald's";//没用到，只有一处屏蔽了代码用到
+"near" = "Nearby";
+"miss_order" = "Miss order";
+"wait_for_second" = "Please wait %ld seconds";
+
+"not_location" = "Cannot accept order due to App cannot obtain location. Please upload the location, or restart the App";
+
+"minute" = "mins";
+
+"income" = "Income";
+"order_distance" = "Order distance";
+
+/*error popup*/
+"error_password_not_match" = "Confirm password and password not match";
+"error_user_reject" = "User rejected";
+"error_user_not_decide" = "User not decided yet";
+"error_device_not_support" = "GPS is not supported in this device";
+"error_upload_location_failed" = "Failed to upload location. Please check the network or go to outdoor";
+
+"error_imperfect_info" = "Information not complete";
+
+
+/*alert*/
+"notice" = "Notification";
+"input_content_and_commit" = "Please input content and submit";
+"suggestion_commit_success" = "Submit succeeded";
+"suggestion_commit_faile"   = "Submit failed";//没用到
+"please_off_duty" = "Please go offline";
+"alert:take_time_notice" = "Please pick up from shop ASAP. 1 mins remained";
+"alert_i_know" = "OK";
+"alert_goto_detail" = "Order details";
+"alert_use" = "Use now";//没用到
+"appointment_tips" = "Scheduled order tips";
+"appointment_tips_content" = "You received a scheduled order. Please check the pickup time. Complete it after tapping on 'Go online'";
+
+"alert_tabletime_no_region" = "Area is not selected";
+
+/*time table*/
+"time_table_clause" = "For the information above, SF has the right to modify and update the rosters above. In case of any dispute, SF CAR (HONG KONG) LIMITED reserves the right of final decision";
+
+"year" = "year";//没用到，只有一处屏蔽了代码用到
+"placeholder:absence_reason" = "Within 120 characters";
+"time_table_no_schedule" = "No available roster";
+"time_table_no_distribution" = "No order"; //暫時沒有散單
+
+"time_table_is_fulled" = "Full";
+"time_table_is_reject" = "Application rejected";
+"time_table_is_audit" = "Application confirmed";
+"time_table_is_leave" = "Applied for leave";
+
+"time_table_weekday" = "week";//没用到
+"time_table_report" = "Report type";
+
+"time_table_absence_later" = "Late";
+"time_table_absence_early" = "Leave earlier";
+"time_table_absence_sick" = "Sick leave";
+"time_table_absence_casual" = "Casual Leave";
+"time_table_input_absence_reason" = "Please input reason";
+"time_table_input_absence_leave_reason" = "Please input reason";//没用到
+
+"time_table_upload_absence_image" = "Optional document proof (Upload photo)";
+"time_table_picker_absence_time" = "Start or end time*";
+
+"time_table_apply_sccuess" = "Roster is applied successfully";
+
+"time_table_little_open" = "A few slots are available"; //尚餘少量名額
+"time_table_not_open" = "All slots have been taken up"; //已超額申請
+
+
+/*network*/
+"no_network_title" = "No network";
+"no_network_subtitle" = "Please check network";
+
+
+/*scan*/
+"scan_input_barcode" = "Waybill number";
+"scan_merchant_title" = "Merchant waybill";//没用到，只有一处屏蔽了代码用到
+"scan_view_scan" = "Scan";
+"scan_view_info" = "View info";//没用到，只有一处屏蔽了代码用到
+"scan_manual_title" = "Input barcode";
+"scan_action_title" = "Scan or input info";//没用到，只有一处屏蔽了代码用到
+"scan_input_code" = "Input code";
+
+
+"clause_words" = "By registering, you agree to T&C";
+"clause_detail_words" = "T&C";
+
+"not_info" = "No info";
+"waitting_audit" = "Pending for review";
+"audited" = "Review approved";
+"audite_reject" = "Review rejected";
+
+///
+"Reimbursement" = "Reimburse";
+"Declare" = "Report";
+"Consult a map" = "View map";
+"Work guidelines" = "Working guidelines"; //工作指引
+"Contact customer service" = "Contact customer service";
+"Photo upload unfinish tips" = "Photo upload is not completed. Please try after upload completed";
+"logged on to other devices tips" = "Your account is being logged in in another device. If it is not you, please contact us at 98934345";
+"Car kind" = "Vehicle type";
+"Car type" = "Vehicle model";
+"Car brand" = "Vehicle brand";
+"Equipment information" = "Equipment information";
+"Please choose the kind of car*" = "Please select vehicle type*";
+"Please enter your driver's license number*" = "Please input driving license*";
+"Please choose the type of car*" = "Please select vehicle type*";
+"Please choose the brand of car*" = "Please select vehicle brand*";
+"Please choose the year of the factory*" = "Please select year of manufacture*";
+"Please enter the license plate number*" = "Please input vehicle number*";
+"Upload driver's license*" = "Upload driving license*";
+"ensure uploaded complete and clear" = "Please confirm the image is clear";
+"Upload Driving License*" = "Upload driving license*";
+"Upload Front Photo of Car" = "Upload photo of the vehicle front";
+"added after successful registration" = "You can supplement after registration";
+"Please wait approval" = "Reviewing in progress, please wait.";
+"step %@" = "Step %@";
+"service rating not requirements" = "Your service rating does not fulfil the order requirements";
+"View notes" = "View notes";
+"Sliding order" = "Swipe to accept order";
+"accept order %@" = "Accept %@ order";
+"kilometre" = "KM";
+"rob order %@" = "Grab %@ order";
+"Freight transportation" = "Parcel";
+"Give me a ride" = "Give me a ride";
+"Remaining time of pick-up" = "Pickupremaining time";
+"Remaining time of distribution" = "Delivery remaining time";
+"Sending address" = "Sender address";
+"sender" = "Sender";
+"Receiving address" = "Recipient address";
+"Addressee" = "Recipient";
+"Addressee Taker" = "Pickup人";
+"Rejection of success" = "Reject order succeeded";
+"Confirm rejection" = "Reject order confirmed";
+"My freight order" = "My frieght order";
+"Freight Receipt and Service Rating" = "Frieght order & service rating";
+"order completed" = "Order is completed";
+"order cancelled" = "Order is cancelled";
+"Order Revision List" = "Order /工作修訂列表";
+"Map settings" = "Map settings";
+"Credit receipt after customer sign receipt" = "Need to return recipt for credit card payment. Please return within the same day.";
+"Pending item" = "Pending item";
+"declaration Success" = "Report succeeded";
+"Scatter distribution" = "Distribution of overflow order";
+"Miss order" = "Missed order";
+"No pending items" = "No pending items";
+"invalid order tips long" = "Invaild waybill, please return item to merchant.\nYou can proceed the delivery of other items 。\nIf there is any problem, please contact customer service.";
+"Please choose the date and time" = "Please select date and time";
+"check network and upload" = "Please check network, and then upload";
+"upload fail" = "Upload failed";
+"upload success" = "Upload succeeded";
+"invalid order tips simple" = "Invalid waybill, please check content";
+"local time not true tips" = "Invalid device time, please check and fix it.";
+"Make sure offline?" = "Confirm offline?";
+"Service charge" = "Service fee";
+"No optional content" = "No optional content";
+"Confirm to delete picture?" = "Confirm to delete image?";
+"Check no information" = "No information";
+"back to merchant, cs follow-up" = "Return item to merchant. Advise merchant to contact customer service.";
+"CS follow-up" = "Please let Customer service to follow";
+"Pick item" = "Pickup";
+"Sign item" = "Sign item";
+"Check Item" = "Check item";
+"Receiving item" = "Receiving item";
+"Retry" = "Retry";
+"Navi" = "Navigation";
+"declare problem of positioning" = "Report location problem";
+"Acquisition positioning" = "Verifying location";
+"Near: %ld minute ago" = "Nearby：%ldmins before";
+"Arrival: %ld minute ago" = "Arrival：%ldmins before";
+"Balance" = "Balance";
+"Advance payment" = "Advance payment";
+"Allowance" = "Allowance";
+"Red envelope" = "Red pocket";
+"Bonus" = "Incentive";
+"Cash withdrawal" = "Cash withdrawal";
+"I got it" = "OK";
+"notification" = "Notification";
+"No kind of work to be applied" = "No position is available";
+"change need offline" = "Please offline before update information"; //如需修改資料請先下班
+"Question category" = "Enquiry category";
+"Upload photos" = "Upload photo";
+"Language" = "Language";
+"Turn on Scanning Assistant Light" = "Turn on light to scan code";
+"The network is busy. Please try again later." = "Network busy, please try again later.";
+"Change table need correct kind" = "If you need to change roster, please change to corresponding position.";
+"All regions are full" = "All areas are full";
+"Schedule tips" = "Apply roster tips";
+"Overdue time" = "Time to apply roster is passed";
+"Repeated renewal notice" = "Duplicated roster period notice";
+"selected time period same area should not overlap" = "Time periods for same area cannot be overlapped";
+"Workday passed or no more time to select" = "Past roster no longer available";
+"no application will be accepted" = "The roster is full";
+"Schedule not accepted, try other" = "The roster application is rejected. Please try other area or time period";
+"Accept Schedule, cant change" = "Your roster application is confirmed. It cannot be modified now.";
+"Morning Schedule" = "Morning roster";
+"Night Schedule" = "Night roster";
+"Midnight Schedule" = "Midnight roster";
+"Morning" = "08-19";
+"Evening" = "19-00";
+"Midnight" = "00-08";
+"Can rest" = "Can take leave";
+"preparation" = "Prepare";
+"My Message" = "My message";
+"Order Need know" = "Accept order tips"; //接單需知
+"Rule Manager" = "Rule manager"; //管理新規
+"Rewards and punishments Recod" = "Job Statistics";
+"Common Question" = "FAQ";
+"All Service" = "All services";
+"Recommend" = "Referral"; // 推薦
+"Running distance" = "Running distance";
+"Working manual" = "Handbook"; // 工作手冊
+"My info" = "My ";
+"Work Schedule" = "Roster";
+"Receiving rate this week" = "Acceptance rate"; //本週接單率 weekly accept order rate
+"Takeaway spread" = "Hotspot"; //外賣散單
+"Takeaway Schedule" = "Roster"; // 外賣更表
+"Order replenish" = "Order supplement";
+"transportation reconciliation" = "Express Log";   // 速運對賬
+"Common services" = "Common services";
+"Work need" = "Required"; // 工作必備
+"No Record" = "No record";
+"Workday" = "Workday";
+"Branch" = "Branch";
+"Nature" = "Nature";
+"Votes" = "Total number of orders"; // 總票數"
+"Estimated revenue" = "Estimated income";
+"Ballot details" = "Order details";
+"Income details" = "Income details";
+"Area" = "Area";
+"Rent" = "Rental";
+"Photo Proof" = "Photo proof"; //拍照證明
+"Order/Work Supplementary Overview" = "Order / Task amendmen overview"; //訂單/工作補充總覽
+
+"Select reason" = "Select reason";
+"Please Select reason" = "Please select reason";
+"Relevant to task" = "Relevant to task（e.g. Relate to product or sender or recipient）";
+"Relevant to order" = "Relevant to order（Need to declare once）";
+"Order/Task Supplementary" = "Order / Task amendment"; //訂單/工作補充
+"Order" = "Order ";
+"Task" = "Task";
+"Reply #" = "Reply #";
+"Input content" = "Input content";
+"No declaration" = "No declare content";
+"Task Detail" = "Task details";
+"Work cycle" = "Task cycle"; //工作週期
+"Data transfer" = "Data transfer";
+"Car license plate verification" = "Vehicle number verification";
+"Disagree" = "Disgree";
+"Agree transfer" = "Agree to transfer";
+"Select job" = "Select position";
+"(Main)" = "(Main)";
+"Accept Order Detail" = "Accept order details";
+"Wrong location" = "Wrong location";
+"Click to refresh location" = "Click here to update location, otherwise it will affect accept order and income";
+"Order has update" = "Order status is updated"; //已更新訂單狀態
+"Warehouse scan" = "Warehouse scan code"; //倉管掃碼
+"Download new data" = "Download new data";
+"Clear Cache, and download next time" = "Please clear local cache. Download again in next time";
+"Schedule need know" = "Roster guidelines"; //報更需知
+"Show area content" = "Remarks"; //顯示區域補充內容
+"Oil Card Use RecordOil Card Use Record" = "Oil card usage records";
+"Record of excessive service charges" = "Service fee transactions"; //服務費過數記錄
+"Announcement" = "Announcement";
+
+"Schedule this week" = "This week roster"; //本週更表
+"Schedule past" = "Historical roster";
+"Schedule wait auth" = "Pending for review roster";
+"Schedule has auth" = "Approved roster";
+"Map" = "Map";
+"Select time" = "Select time";
+
+"(income seen detail)" = "(Please find actual income in transfer records page)";
+"(income calculated basis, more seen detail)" = "(Actual income is calculated with items. Please find transfer records page)";
+"(no reimbursement; income calculated basis, more seen detail)" = "(Reimbursement is not counted；Actual income is calculated with items. Please find transfer records page)";
+
+"operation remark content" = "Operation remarks：\n1. Leave application\n- Need to submit before roster\n- Medical proof is required for sick leave. Please Whatsapp 6468-7080\n* For example, if you applied Roster A 08:00-18:59(Rider) or Roster WA 09:00-12:59(Walker), you need to submit before 07:59\n\n2. Late / Early leave declare\n- Need to submit before roster\n* For example, if you applied Roster A 08:00-18:59(rider) or Roster WA 09:00-12:59(walker)，You can only submit within 08:00-18:59\n\n3. Other situation\n- If you cannot submit in time, please Whatsapp 6468-7080";
+
+"Clear" = "Clear";
+"submit sign?" = "Confirm signature？"; //確認提交簽名？
+"sign hint" = "Signature"; //簽名確認簽收
+"sign confirm" = "Confirm by signature"; //簽名確認
+"select photo sign hint" = "Based on receiver special requirement:\nFor example:\n- Receive by Management office\n- Stamped when receive\n- Place item in specific location"; // 如收方有特別要\n求，例：\n- 管理處代收\n- 蓋章簽收\n- 指定擺放位置
+"select sign hint" = "收方簽收確認";
+"select sign title" = "選擇簽收方法";
+
+"check detail" = "View details";
+"update time" = "Last modify";
+"trans list hint" = "For any enquiry, please contact the daily branch leader";
+
+"schedule apply hint" = "Roster application description：\n\n1st Batch：\nOpen from Friday 00:00 to Sunday 23:59, review on Monday\n\n2nd Batch：\n1st Batch review completed, open and review from Monday 21:00 to Thursday 23:59\n\n3rd Batch：\nYou can apply roster until at 21:59 in 1 day before the roster";
+
+
+"first cycle" = "1st Batch"; //首輪
+"second cycle" = "2nd Batch"; //次輪
+"after cycle" = "3rd Batch"; //後補
+"start use>" = "Start to use>";
+"updating resource" = "Updating";
+"login" = "Login";
+"Restaurant" = "Restaurant";
+"From" = "From";
+"must delivery by priority" = "You must deliver according to priority";
+"suggest delivery" = "Suggested delivery route";
+"take code" = "Pickup code";
+"order finished" = "Order completed";
+"total votes" = "Totals";
+"unusual" = "Unusual";
+"unpick" = "Waiting";
+"picking" = "Picked up";
+"finish" = "Delivered";
+"total income" = "Total income";
+"click retry" = "Click to retry";
+"filter" = "Filter";
+"read the content" = "I have read the content above "; //本人已閱讀以上內容
+"reset" = "Reset";
+"read and agree the content" = "I have read and agree the terms above";
+"sign up" = "Signup";
+
+
+"many distribute order" = "High demand";
+"few distribute order" = "Low demand";
+
+"distribution notice" = "Only overflow order will be available to freelance riders。\nClick on area to view standby location\nYou can get order assignment if you go online within the area.\nYou must use insulation bags for delivery. Restaurant may refuse the delivery if you have no insulation bag.";
+
+"Update Location" = "Update location";
+
+"Schedule tips content" = "You have applied the roster. Please wait for approval.";
+
+"merge error title" = "Wrong record";
+
+"merge error content" = "Vehicle number does not match the records. Please try with previous number or dial customer service at 2121-2211。";
+
+"order id" = "Order ID:";
+"task id" = "Task ID:";
+"ref id" = "Merchant reference ID:";
+"custom code" = "Waybill number:";
+"accept order time" = "Accept order time:";
+"work start time" = "Job start time:";
+"work finished time" = "Job finish time:";
+
+"contacts" = "Contacts";
+
+"work finished tips" = "(Actual income depends on number of items. Please find transfer records page.)";
+
+"lowest level requirement" = "Lowest service level requirements";
+
+"your level" = "Your service level ";
+
+"%d hours" = "%dhour";
+
+"after accept order" = " after to accept order";
+
+"can accpet order" = " can accept order";
+
+"immediately" = "Now";
+"today" = "Today";
+"appointment" = "Scheduled";
+
+"monthly payment" = "Monthly rental";
+"one order" = "1 order";
+"restaurant address" = "Restaurant address:";
+"count down accept order" = "Count down to accept order";
+
+"missed order time" = "Miss order time：";
+"am" = "am";
+"pm" = "pm";
+"input detail message" = " Please input details";
+
+"whole" = "all";
+
+"sycn tips" = "(There are items not collected. Please check.)";
+
+"accept order" = "Accept order ";
+
+"a dispatch order" = "You have 1 assigned order";
+"%@ rob order" = "%@ grabbed order";
+"bluetooth tips" = "Bluetooth must be turn on, or it may affect accept order";
+
+"upload earlier scan resule" = "Please upload earlier scan result";
+"reupload scan result" = "Please upload the scan result again";
+
+"order" = "order";
+"task" = "task";
+
+"whole region" = "whole area";
+
+"wait learn" = "To be completed";
+"completed" = "completed";
+
+"reimbursement" = "reimbursement";
+"declear" = "declare";
+"no reason tips" = "No reason tips";
+
+"scan result" = "Scan result";
+"sacn driver tips1" = "Scan to complete item collection";
+"sacn driver tips2" = "Scan to open the signature page, for recipient to collect item";
+"sacn driver tips3" = "View the processing order details.\nFor example, order info and location";
+"sacn warehouse tips1" = "Scan to complete";
+"sacn warehouse tips2" = "Scan items which are pending to handle or withdrawn";
+"sacn warehouse tips3" = "View order details. For example order details and remarks";
+"warehouse out" = "Out from warehouse";
+"no line" = "No route assigned";
+"piece" = "piece";
+"scan title1" = "Pickup";
+"scan title2" = "Delivery";
+
+
+"no position" = "GPS Location is missing";
+"no position tips" = "1.Please check network connectivity, click to retry\n2.If you arrived, but device's GPS location is wrong, please declare location problem";
+"after delivery error tips" = "1.Click to open navigation\n2.If you arrived, but device's GPS location is wrong, please declare location problem";
+"after delivery tips" = "Please operate when you arrive";
+
+"service level" = "Service level";
+"user rate" = "User rating";
+
+"other detail" = "Other details";
+"choose detail" = "Select for other details";
+
+"modify info" = "Modification succeeded";
+
+"edit postion confirm title" = "Confirm";
+"edit postion confirm content" = "Review is needed. You cannot go online during the review progress.";
+"upload log failed" = "Upload failed";
+"upload log success" = "Upload log succeeded";
+"no region period" = "No roster in this area";
+"show emtpy region" = "Available timeslots";
+"full" = "Full";
+
+// 星期
+"Mon" = "Mon";
+"Tue" = "Tue";
+"Wed" = "Wed";
+"Thu" = "Thurs";
+"Fri" = "Fri";
+"Sat" = "Sat";
+"Sun" = "Sun";
+
+"holiday" = "Holiday";
+"weekday" = "Weekday";
+
+
+// 任务
+"next mission tips" = "* Below are missions in next phase. Eligible to partners who fulfil requirements";
+"my missions" = "Ongoing incentive";
+"period missions" = "Next incentive";
+"mission date" = "Incentive date";
+"mission completed" = "Incentive completed";
+
+"customer" = "Customer";
+
+"pickup address" = "Pickup address";
+"received address" = "Delivery address";
+
+"current period region" = "Current roster areas:";
+
+// 业务文字
+"Merchant Delivery" = "Merchant delivery";
+"Takeaway" = "FoodDelivery";
+"Hourly Rental" = "HourlyRental";
+"Home Express Pickup" = "HDPickup";
+"Home Express Delivery" = "HDDelivery";
+"Express Parcel" = "ExpressParcel";
+"Warehouse Keeper" = "Warehouse specialist";
+"Home Express" = "HomeDelivery";
+"Pickup Delivery" = "PickupDelivery";
+"Piont 2 Point" = "Points";
+"General Rental" = "GeneralRental";
+
+// language
+"English" = "English";
+"Chinese Simplified" = "簡體中文";
+"Chinese Traditional" = "繁體中文";
+
+"example" = "Example";
+"order map tip" = "Tap to show detailed address";
+
+"seg:NO" = "No";
+"seg:YES" = "Yes";
+
+"title:MyPositionWorkState-first" = "Online preparation-Initial setting";
+"title:orderNotifySetting-first" = "Order notification-Initial setting";
+"title:orderNotifySetting" = "Order notification";
+
+"no_onwork_prepare" = "No online preparation";
+
+// work state
+"account auto offline" = "Being offline automatically";
+"last order message" = "Turn offline automatically when current task is completed.";
+"stop rest message" = "Keep online, complete current task";
+"button:appointment offline" = "Scheduled offline";
+"button:stop rest" = "Not take rest";
+
+"equipment info" = "Equipment information";
+
+"sort by update time" = "Sort by update time";
+"sort by work day" = "Sort by work day";
+
+"near markdown, receive order" = "Proceed to the marker location on the map, so as to receive order";
+"please choose" = "Select";
+
+"input email address" = "Email Address";
+
+"Litre" = "Litre";
